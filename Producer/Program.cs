@@ -15,6 +15,16 @@ channel.QueueDeclare(queue: "test-queue1",
                      autoDelete: false,
                      arguments: null);
 
+channel.ExchangeDeclare(exchange: "test-exchange1",
+                        type: "fanout",
+                        durable: true,
+                        autoDelete: false);
+
+channel.QueueBind(queue: "test-queue1", 
+                  exchange: "test-exchange1",
+                  routingKey: String.Empty,
+                  arguments: null);
+
 const string message = "Our message! :)";
 
 var body = Encoding.UTF8.GetBytes(message);
