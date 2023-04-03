@@ -5,7 +5,14 @@ VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Producer", "Producer\Producer.csproj", "{0EDF322A-B6B0-44B5-8264-6BBE514BB8B4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Consumer", "Consumer\Consumer.csproj", "{1ED707B5-C449-484D-A3DC-AA010AF1A40C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Consumer", "Consumer\Consumer.csproj", "{1ED707B5-C449-484D-A3DC-AA010AF1A40C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1", "1", "{1B5D8C80-BFD6-4E3C-B54E-0378D2442918}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2", "2", "{6D181D77-59AA-4223-B04D-458511D5916C}"
+	ProjectSection(SolutionItems) = preProject
+		.gitkeep = .gitkeep
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,6 +31,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0EDF322A-B6B0-44B5-8264-6BBE514BB8B4} = {1B5D8C80-BFD6-4E3C-B54E-0378D2442918}
+		{1ED707B5-C449-484D-A3DC-AA010AF1A40C} = {1B5D8C80-BFD6-4E3C-B54E-0378D2442918}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {18404643-C5FA-49CA-9C48-3883C98D692B}
